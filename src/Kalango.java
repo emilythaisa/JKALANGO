@@ -1,10 +1,22 @@
 public class Kalango extends Personagem {
+    public Kalango() {
+
+    }
 
     @Override
     public void mover() {
-        mover-=3;
+        energia -= 3; 
+        System.out.println("Kalango se moveu. Energia atual: " + energia);
     }
-        System.out.println("energia diminuindo"+ mover);)
-        public void fazerSom (){
-            System.out.println("TSSSSSSSSSS");
+
+    @Override
+    public void fazerSom() {
+        System.out.println("Tssss!"); 
+    }
+    @Override
+    public void comer() {
+        energia += 4;
+        System.out.println("Comendo... energia: " + energia );
+
+    }
 }

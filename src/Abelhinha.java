@@ -1,15 +1,22 @@
 public class Abelhinha extends Personagem {
+    public Abelhinha() {
+    
+    }
 
     @Override
     public void mover() {
-        System.out.println("voando nos 360 graus... na doida se perder a rota é Game over");
+        energia -= 1; 
+        System.out.println("Abelhinha se moveu. Energia atual: " + energia);
     }
-    public void energia() {
-        energia -=1;
-        System.out.println("acabando as energias"+energia);
+
+    @Override
+    public void fazerSom() {
+        System.out.println("Bzzzz!"); 
     }
-        public void fazerSomab (){
-            System.out.println("bzzzzzzzzzz");
-        }
-    
+    @Override
+    public void comer() {
+        energia += 6;
+        System.out.println("Comemdo.... Energia: "+energia);
+        
+    }
 }

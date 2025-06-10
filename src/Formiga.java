@@ -1,17 +1,19 @@
-public class Formiga  extends Personagem{
+public class Formiga extends Personagem {
 
     @Override
     public void mover() {
-       System.out.println("anda s   ó pra frente");
+        energia -= 2; 
+        System.out.println("Formiga se moveu. Energia atual: " + energia);
     }
-    public void dimenergia (){
-        dimenergia-=2;
-        System.out.println("andou a energia diminuiu"+dimenergia);
-    }
-    public void fazerSom (){
-        System.out.println("FZZZZZZZZZZZZZ");
-    }
-    
 
-
+    @Override
+    public void fazerSom() {
+        System.out.println("Fzzzz!"); 
+    }
+    @Override
+    public void comer() {
+        energia += 5;
+        System.out.println("Comendo... energia: " + energia );
+        
+    }
 }
