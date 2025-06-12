@@ -1,4 +1,4 @@
-public class Formiga extends Personagem {
+public class Formiga extends Personagem implements IArmamento{
 
     @Override
     public void mover() {
@@ -14,6 +14,11 @@ public class Formiga extends Personagem {
     public void comer() {
         energia += 5;
         System.out.println("Comendo... energia: " + energia );
+        
+    }
+    @Override
+    public void atacar() {
+        System.out.println("Ataca com 4 formas!");
         
     }
 }

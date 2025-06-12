@@ -5,10 +5,13 @@
     protected int energia;
     protected String nome;
     
+public Personagem (){
+
+}
 
     void dormir() {
         energia += 10;
-        System.out.println("Dormindo...Energia: "+energia);
+        System.out.println("Dormindo...Energia:... "+energia);
         }
    
 }

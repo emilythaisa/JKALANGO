@@ -1,4 +1,4 @@
-public class Kalango extends Personagem {
+public class Kalango extends Personagem implements IArmamento {
     public Kalango() {
 
     }
@@ -17,6 +17,11 @@ public class Kalango extends Personagem {
     public void comer() {
         energia += 4;
         System.out.println("Comendo... energia: " + energia );
-
     }
+
+        @Override
+        public void atacar(){
+            System.out.println("ataca com 2 formas!");
+
+        }
 }

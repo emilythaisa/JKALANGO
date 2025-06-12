@@ -19,4 +19,10 @@ public class Abelhinha extends Personagem {
         System.out.println("Comemdo.... Energia: "+energia);
         
     }
+
+    public void atacar(){
+        System.out.println("ataca de 1 forma!");
+    }
+
+
 }

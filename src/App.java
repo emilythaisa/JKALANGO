@@ -1,17 +1,20 @@
 public class App {
     public static void main(String[] args) {
+
         //instancie um objeto de cada tipo de animal
         Formiga f = new Formiga();
         f.energia = 10;
         for (int i = 0; i < 3; i++) {
             f.mover();
         }
+
        
         System.out.print(f.nome);
         f.fazerSom();
         f.dormir();
         f.comer();
-        System.out.println("energia final: "+ f.energia);
+        f.atacar();
+        System.out.println("energia final:... "+ f.energia);
 
 
 
@@ -24,7 +27,8 @@ public class App {
         k.fazerSom();
         k.dormir();
         k.comer();
-        System.out.println("energia final: "+ k.energia);
+        k.atacar();
+        System.out.println("energia final:... "+ k.energia);
 
 
         Abelhinha a = new Abelhinha();
@@ -36,8 +40,9 @@ public class App {
         a.fazerSom();
         a.dormir();
         a.comer();
+        a.atacar();
 
-        System.out.println("energia final: "+ a.energia);
+        System.out.println("energia final:... "+ a.energia);
        
     }
 }
