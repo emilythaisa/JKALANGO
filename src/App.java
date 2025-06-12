@@ -1,8 +1,13 @@
+import br.com.jkalango.view.JSplash;
+import br.com.jkalango.view.JIntro;
+
 public class App {
     public static void main(String[] args) {
 
         //instancie um objeto de cada tipo de animal
         Formiga f = new Formiga();
+        new JSplash();
+        new JIntro();
         f.energia = 10;
         for (int i = 0; i < 3; i++) {
             f.mover();
