@@ -7,7 +7,7 @@ public class App {
         //instancie um objeto de cada tipo de animal
         Formiga f = new Formiga();
         new JSplash();
-        new JIntro();
+    
         f.energia = 10;
         for (int i = 0; i < 3; i++) {
             f.mover();

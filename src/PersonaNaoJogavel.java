@@ -18,7 +18,9 @@ public class PersonaNaoJogavel extends Personagem{
         throw new UnsupportedOperationException("Unimplemented method 'comer'");
     }
 
-    
+    Personagem P = new Personagem(10,"gustavo") {
+
+    };
     
    
 }

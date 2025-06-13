@@ -29,8 +29,7 @@ import javax.swing.JOptionPane;
         starButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed (ActionEvent e) {
-                JOptionPane.showMessageDialog(JSplash.this, "Jkalango");
-            }
+                new JIntro();            }
 
 
         });
