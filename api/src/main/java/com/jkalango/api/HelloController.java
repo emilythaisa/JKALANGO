@@ -14,6 +14,7 @@ public class HelloController {
     @GetMapping
     public String mostrarMensagem(){
         return "Hello !";
+        
     }
 
 }
