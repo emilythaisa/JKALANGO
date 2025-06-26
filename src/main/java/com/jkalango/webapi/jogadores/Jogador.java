@@ -17,7 +17,15 @@ public class Jogador {
     private String nome; 
     private String nickname; 
     private String email;
-    private String celular; 
+    private String telefone; 
     private String senha;
+
+    public Jogador(DadosCadastroJogador dados){
+        this.nome = dados.nome();
+        this.nickname = dados.nickname();
+        this.telefone = dados.telefone();
+        this.email = dados.email();
+        this.senha = dados.senha();
+    }
 
 }

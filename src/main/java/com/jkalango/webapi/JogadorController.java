@@ -3,6 +3,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.jkalango.webapi.jogadores.DadosCadastroJogador;
 import com.jkalango.webapi.jogadores.JogadorRepository;
+import com.jkalango.webapi.jogadores.Jogador;
+
+import jakarta.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,8 +20,10 @@ public class JogadorController {
     private JogadorRepository repository;
 
     @PostMapping
+    @Transactional //p/habilitar no canco de dados
+
     public void cadastrar(@RequestBody DadosCadastroJogador dados){
         //System.out.println(dados);
-        repository.save(new Jogador(null,dados.nome(),dados.email(),dados.telefone(),dados.senha()));
+        repository.save(new Jogador(dados));
     }
 }
