@@ -22,7 +22,7 @@ public class Jogador {
 
     public Jogador(DadosCadastroJogador dados){
         this.nome = dados.nome();
-        this.nickname = dados.nickname();
+        this.nickname = dados.nickName();
         this.telefone = dados.telefone();
         this.email = dados.email();
         this.senha = dados.senha();
